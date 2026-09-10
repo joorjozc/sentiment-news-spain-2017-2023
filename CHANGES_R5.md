@@ -19,6 +19,14 @@ Figure 5 and one sentence did.
   of persistent sources (fixed weights). The break tests and the pre/post-COVID contrasts are
   repeated on the fixed-panel emotion series. The script needs headline-level data, which are
   not distributed; its outputs, including the monthly fixed-panel series, are in `results/r5/`.
+
+## ARIMAX (scripts/12_r5_arimax_multiplicity.py)
+- Benjamini-Hochberg and Holm corrections over the 88 emotion coefficients and the 44 dummy
+  coefficients of the 22 ARIMAX models, computed from the published p-values.
+- The RMSE and MAE reported by 03_arimax_models.py included the first residual of the diffuse
+  initialization, which for d = 1 equals the level of the series (e.g. 93.45 for CPI). They are
+  recomputed without the initialization observations (`results/r5/arimax_rmse_corrected.csv`),
+  and Figure 3 is regenerated without that residual (`figures/fig_03_arimax_global.png`).
 - `scripts/11_r5_negativity_index.py` - complementary test of the negativity hypothesis: the
   composite negativity index (anger + fear + sadness, as in Fig. 6) in a three-variable VAR
   [CPI, negativity, joy], with Granger tests in both directions (bootstrap, Holm), a lag sweep

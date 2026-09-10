@@ -1,0 +1,142 @@
+{
+  "n_models": 22,
+  "multiplicity": {
+    "dummy": {
+      "n_tests": 44,
+      "expected_by_chance": 2.2,
+      "nominal_05": 4,
+      "bh_05": 1,
+      "holm_05": 1,
+      "nominal": [
+        {
+          "model": "Clothing & Footwear",
+          "term": "D_COVID",
+          "beta": 8.767778,
+          "p": 0.0,
+          "q_bh": 0.0,
+          "p_holm": 0.0
+        },
+        {
+          "model": "ICM",
+          "term": "D_UKRAINE",
+          "beta": 3.418629,
+          "p": 0.0026,
+          "q_bh": 0.057199999999999994,
+          "p_holm": 0.1118
+        },
+        {
+          "model": "politics → ICC",
+          "term": "D_COVID",
+          "beta": -8.158305,
+          "p": 0.0128,
+          "q_bh": 0.18773333333333336,
+          "p_holm": 0.5376000000000001
+        },
+        {
+          "model": "ICC",
+          "term": "D_COVID",
+          "beta": -10.784774,
+          "p": 0.0215,
+          "q_bh": 0.2365,
+          "p_holm": 0.8815
+        }
+      ]
+    },
+    "emotion": {
+      "n_tests": 88,
+      "expected_by_chance": 4.4,
+      "nominal_05": 6,
+      "bh_05": 2,
+      "holm_05": 2,
+      "nominal": [
+        {
+          "model": "Clothing & Footwear",
+          "term": "Joy",
+          "beta": 655.861596,
+          "p": 0.0,
+          "q_bh": 0.0,
+          "p_holm": 0.0
+        },
+        {
+          "model": "ICM",
+          "term": "Joy",
+          "beta": 1080.762548,
+          "p": 0.0002,
+          "q_bh": 0.0088,
+          "p_holm": 0.017400000000000002
+        },
+        {
+          "model": "Clothing & Footwear",
+          "term": "Fear",
+          "beta": -675.088499,
+          "p": 0.0019,
+          "q_bh": 0.055733333333333336,
+          "p_holm": 0.1634
+        },
+        {
+          "model": "IPI",
+          "term": "Sadness",
+          "beta": -913.321942,
+          "p": 0.0031,
+          "q_bh": 0.0682,
+          "p_holm": 0.2635
+        },
+        {
+          "model": "Communications",
+          "term": "Joy",
+          "beta": -68.665636,
+          "p": 0.0238,
+          "q_bh": 0.41888000000000003,
+          "p_holm": 1.0
+        },
+        {
+          "model": "society → ICC",
+          "term": "Joy",
+          "beta": -277.65463,
+          "p": 0.0414,
+          "q_bh": 0.6072000000000001,
+          "p_holm": 1.0
+        }
+      ]
+    }
+  },
+  "global": {
+    "rmse_published": 10.2164,
+    "rmse_corrected": 0.65239228513618,
+    "mae_corrected": 0.47767370235491785,
+    "first_residual": 93.44590972776308,
+    "first_level": 94.609,
+    "aic": 180.64,
+    "max_abs_residual": 2.8661282798727683,
+    "max_abs_residual_date": "March 2022",
+    "residual_sd": 0.6563582321594764
+  },
+  "rmse_corrected": {
+    "IPC_ECOICOP Índice General": 0.65239228513618,
+    "ECOICOP_Alimentos y bebidas no alcohólicas": 0.6312199273071795,
+    "ECOICOP_Bebidas alcohólicas y tabaco": 0.36849615103958827,
+    "ECOICOP_Vestido y calzado": 3.143008245913063,
+    "ECOICOP_Vivienda, agua, electricidad, gas y otros combustibles": 2.628099526406229,
+    "ECOICOP_Muebles, artículos del hogar y artículos para el mantenimiento corriente del hogar": 0.34556607880313683,
+    "ECOICOP_Sanidad": 0.09744449087073494,
+    "ECOICOP_Transporte": 1.8616219162408987,
+    "ECOICOP_Comunicaciones": 0.7068296757220587,
+    "ECOICOP_Ocio y cultura": 1.0632853686328274,
+    "ECOICOP_Enseñanza": 0.23546066923064404,
+    "ECOICOP_Restaurantes y hoteles": 0.369025104120453,
+    "ECOICOP_Otros bienes y servicios": 0.17591892088021602,
+    "ICM": 8.312571502466309,
+    "ICC": 7.845850960269722,
+    "IPI": 7.806948440329124,
+    "economia -> IPC_ECOICOP Índice General": 0.6557569716568326,
+    "politica -> ICC": 7.893208473277321,
+    "sociedad -> ICC": 7.641056580759343,
+    "deporte -> ECOICOP_Ocio y cultura": 1.0747306724670613,
+    "cultura -> ECOICOP_Ocio y cultura": 1.0656479425123573,
+    "medioambiente -> ECOICOP_Vivienda, agua, electricidad, gas y otros combustibles": 2.6561372855053063
+  },
+  "rmse_published_range": [
+    8.3126,
+    15.0807
+  ]
+}
