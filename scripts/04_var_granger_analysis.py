@@ -166,9 +166,11 @@ print(f"   FEVD guardado: {fevd_path}")
 
 fevd_summary = fevd.decomp
 ipc_idx = ENDOGENOUS.index(IPC_COL)
-n_periods = fevd_summary.shape[0]
+# fevd.decomp tiene forma (ecuacion, horizonte, shock): el primer eje es la
+# variable respondiente, no el horizonte.
+n_periods = fevd_summary.shape[1]
 fevd_ipc = pd.DataFrame(
-    fevd_summary[:, ipc_idx, :],
+    fevd_summary[ipc_idx, :, :],
     columns=ENDOGENOUS,
     index=range(1, n_periods + 1)
 )
@@ -196,7 +198,7 @@ print(f"   {fevd_file}")
 # FEVD para todas las variables
 for var_idx, var_name in enumerate(ENDOGENOUS):
     fevd_var = pd.DataFrame(
-        fevd_summary[:, var_idx, :],
+        fevd_summary[var_idx, :, :],
         columns=ENDOGENOUS,
         index=range(1, n_periods + 1)
     )

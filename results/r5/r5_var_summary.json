@@ -1,0 +1,323 @@
+{
+  "n_obs_differenced": 83,
+  "selected_orders": {
+    "AIC": 6,
+    "BIC": 0,
+    "HQIC": 2,
+    "FPE": 6
+  },
+  "control_r4": {
+    "FEVD CPI own h12 = 0.6732": true,
+    "FEVD Fear h12 = 0.1154": true,
+    "GFEVD emotions = 39.5%": true,
+    "Portmanteau VAR(6) = 0.0327": true,
+    "Table X joy_first CPI = 0.6574": true,
+    "Table X joy_second CPI = 0.6732": true,
+    "Table X reversed CPI = 0.5596": true,
+    "Table X emotions_first CPI = 0.5596": true
+  },
+  "models": {
+    "VAR(2)": {
+      "nobs": 81,
+      "coef_per_equation": 11,
+      "portmanteau_p_plus5": 0.009213932823291051,
+      "portmanteau_12": 0.03588879419101642,
+      "portmanteau_16": 0.06333390162619013,
+      "normality_p": 3.406488949102659e-05,
+      "max_root_modulus": 0.7283430258033046,
+      "joint": {
+        "emotions_to_cpi": {
+          "F": 2.0327959870691736,
+          "df": [
+            8,
+            350
+          ],
+          "p": 0.04193452420991752,
+          "p_holm": 0.04193452420991752,
+          "p_boot": 0.056,
+          "p_boot_holm": 0.056
+        },
+        "cpi_to_emotions": {
+          "F": 3.0204159734896234,
+          "df": [
+            8,
+            350
+          ],
+          "p": 0.0027103567579887674,
+          "p_holm": 0.005420713515977535,
+          "p_boot": 0.0075,
+          "p_boot_holm": 0.015
+        }
+      },
+      "pairs_nominal_05": 5,
+      "pairs_bh_05": 2,
+      "pairs_holm_05": 0,
+      "nominal_pairs": [
+        "CPI->Sadness",
+        "Fear->Anger",
+        "CPI->Joy",
+        "Fear->Sadness",
+        "CPI->Fear"
+      ],
+      "gfevd_cpi_h12": {
+        "CPI": 0.8406108144836171,
+        "Anger": 0.044443579460260264,
+        "Fear": 0.04047769432842314,
+        "Sadness": 0.03285691170840138,
+        "Joy": 0.04161100001929808
+      },
+      "gfevd_emotions_total": 0.15938918551638293,
+      "gfevd_cpi_raw_rowsum": 1.0235235708376624,
+      "fevd_cholesky_baseline_h12": {
+        "CPI": 0.8603849825250277,
+        "Anger": 0.04449967146704325,
+        "Fear": 0.02226398779473986,
+        "Sadness": 0.02678172673175782,
+        "Joy": 0.04606963148143114
+      }
+    },
+    "VAR(4)": {
+      "nobs": 79,
+      "coef_per_equation": 21,
+      "portmanteau_p_plus5": 0.07923788082600147,
+      "portmanteau_12": 0.2347956772605725,
+      "portmanteau_16": 0.43129068572277335,
+      "normality_p": 5.050790039155264e-13,
+      "max_root_modulus": 0.8819333525365273,
+      "joint": {
+        "emotions_to_cpi": {
+          "F": 1.9275752351247633,
+          "df": [
+            16,
+            290
+          ],
+          "p": 0.017966509002492418,
+          "p_holm": 0.035933018004984836,
+          "p_boot": 0.033,
+          "p_boot_holm": 0.066
+        },
+        "cpi_to_emotions": {
+          "F": 1.3661772315611453,
+          "df": [
+            16,
+            290
+          ],
+          "p": 0.15737337290658987,
+          "p_holm": 0.15737337290658987,
+          "p_boot": 0.218,
+          "p_boot_holm": 0.218
+        }
+      },
+      "pairs_nominal_05": 4,
+      "pairs_bh_05": 0,
+      "pairs_holm_05": 0,
+      "nominal_pairs": [
+        "Joy->CPI",
+        "Fear->Anger",
+        "Fear->Joy",
+        "CPI->Sadness"
+      ],
+      "gfevd_cpi_h12": {
+        "CPI": 0.6544454615177843,
+        "Anger": 0.06651050389157077,
+        "Fear": 0.07265721816294617,
+        "Sadness": 0.06994971998047468,
+        "Joy": 0.13643709644722415
+      },
+      "gfevd_emotions_total": 0.34555453848221573,
+      "gfevd_cpi_raw_rowsum": 1.0517130149935352,
+      "fevd_cholesky_baseline_h12": {
+        "CPI": 0.6882888094817043,
+        "Anger": 0.04630818557224118,
+        "Fear": 0.07036713511737752,
+        "Sadness": 0.05615705058926905,
+        "Joy": 0.1388788192394078
+      }
+    },
+    "VAR(6)": {
+      "nobs": 77,
+      "coef_per_equation": 31,
+      "portmanteau_p_plus5": 0.032727808573961625,
+      "portmanteau_12": 0.0939150362379686,
+      "portmanteau_16": 0.3121212771977379,
+      "normality_p": 0.015218657964369053,
+      "max_root_modulus": 0.9560815091433191,
+      "joint": {
+        "emotions_to_cpi": {
+          "F": 1.4626848505550702,
+          "df": [
+            24,
+            230
+          ],
+          "p": 0.08117359705925414,
+          "p_holm": 0.1623471941185083,
+          "p_boot": 0.1165,
+          "p_boot_holm": 0.233
+        },
+        "cpi_to_emotions": {
+          "F": 1.2780158000944852,
+          "df": [
+            24,
+            230
+          ],
+          "p": 0.18006224819516747,
+          "p_holm": 0.18006224819516747,
+          "p_boot": 0.3065,
+          "p_boot_holm": 0.3065
+        }
+      },
+      "pairs_nominal_05": 3,
+      "pairs_bh_05": 0,
+      "pairs_holm_05": 0,
+      "nominal_pairs": [
+        "Fear->Anger",
+        "Fear->Sadness",
+        "Anger->Fear"
+      ],
+      "gfevd_cpi_h12": {
+        "CPI": 0.6053351086184552,
+        "Anger": 0.10765511946752203,
+        "Fear": 0.11258776461868975,
+        "Sadness": 0.10964810671502202,
+        "Joy": 0.06477390058031099
+      },
+      "gfevd_emotions_total": 0.3946648913815448,
+      "gfevd_cpi_raw_rowsum": 1.112087770531852,
+      "fevd_cholesky_baseline_h12": {
+        "CPI": 0.6731857713681544,
+        "Anger": 0.0612685171306499,
+        "Fear": 0.11539287042875443,
+        "Sadness": 0.09472250484823272,
+        "Joy": 0.05543033622420875
+      }
+    }
+  },
+  "legacy_bivariate_bestlag": {
+    "VAR(2)": {
+      "nominal": 7,
+      "holm": 0,
+      "bonf_lag_then_bh": 0
+    },
+    "VAR(4)": {
+      "nominal": 11,
+      "holm": 0,
+      "bonf_lag_then_bh": 0
+    },
+    "VAR(6)": {
+      "nominal": 13,
+      "holm": 0,
+      "bonf_lag_then_bh": 0
+    }
+  },
+  "primary": {
+    "order": 4,
+    "cholesky_cpi_own_range": [
+      0.6576779002873969,
+      0.6902707895091493
+    ],
+    "cholesky_emotions_range": [
+      0.30972921049085067,
+      0.3423220997126031
+    ],
+    "cholesky_joy_range": [
+      0.13720542686696416,
+      0.145474650088921
+    ],
+    "gfevd_raw_rowsum_cpi": 1.0517130149935352
+  },
+  "irf_var4": {
+    "Anger -> CPI": {
+      "h0_3": [
+        0.0,
+        0.1025,
+        -0.0736,
+        -0.0257
+      ],
+      "peak_h": 1,
+      "peak": 0.1024820123734465,
+      "band_excludes_zero_at": []
+    },
+    "Fear -> CPI": {
+      "h0_3": [
+        0.0,
+        -0.0372,
+        0.0066,
+        0.1257
+      ],
+      "peak_h": 3,
+      "peak": 0.12570805209511474,
+      "band_excludes_zero_at": []
+    },
+    "Sadness -> CPI": {
+      "h0_3": [
+        0.0,
+        -0.1531,
+        0.0675,
+        -0.0569
+      ],
+      "peak_h": 1,
+      "peak": -0.15306087423587914,
+      "band_excludes_zero_at": []
+    },
+    "Joy -> CPI": {
+      "h0_3": [
+        0.0,
+        -0.1672,
+        -0.2121,
+        -0.0649
+      ],
+      "peak_h": 2,
+      "peak": -0.21208085262367246,
+      "band_excludes_zero_at": [
+        1,
+        2
+      ]
+    },
+    "CPI -> Anger": {
+      "h0_3": [
+        -0.0006,
+        0.0006,
+        -0.0003,
+        -0.0
+      ],
+      "peak_h": 0,
+      "peak": -0.000603375797732775,
+      "band_excludes_zero_at": []
+    },
+    "CPI -> Fear": {
+      "h0_3": [
+        -0.0001,
+        -0.0002,
+        0.0005,
+        -0.0002
+      ],
+      "peak_h": 2,
+      "peak": 0.0005189674023122746,
+      "band_excludes_zero_at": []
+    },
+    "CPI -> Sadness": {
+      "h0_3": [
+        0.0,
+        -0.0009,
+        0.0013,
+        -0.0001
+      ],
+      "peak_h": 2,
+      "peak": 0.0013353984541698014,
+      "band_excludes_zero_at": [
+        2
+      ]
+    },
+    "CPI -> Joy": {
+      "h0_3": [
+        0.0001,
+        0.0,
+        0.0007,
+        -0.0
+      ],
+      "peak_h": 4,
+      "peak": -0.0007845302329583211,
+      "band_excludes_zero_at": []
+    }
+  }
+}

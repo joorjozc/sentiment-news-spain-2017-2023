@@ -232,10 +232,11 @@ if fevd_file.exists():
     fig, ax = plt.subplots(figsize=(3.5, 3))  # single column
     bottom = np.zeros(len(fevd_ipc))
 
+    # Tristeza tenia el mismo azul que el IPC: dos series indistinguibles.
     colors_fevd = {
         'IPC_ECOICOP Índice General': '#1f77b4',
         'Ira': '#d62728', 'Miedo': '#9467bd',
-        'Tristeza': '#1f77b4', 'Alegria': '#2ca02c'
+        'Tristeza': '#ff7f0e', 'Alegria': '#2ca02c'
     }
 
     for col in fevd_ipc.columns:
@@ -248,8 +249,10 @@ if fevd_file.exists():
     ax.set_xlabel('Forecast horizon (months)')
     ax.set_ylabel('Proportion of variance')
     ax.set_title('FEVD of CPI')
-    ax.legend(fontsize=6, loc='center right')
-    ax.set_ylim(0, 1.05)
+    ax.set_xticks(list(fevd_ipc.index))
+    ax.legend(fontsize=6, loc='upper center', ncol=5, columnspacing=0.8,
+              handlelength=1.0, frameon=False)
+    ax.set_ylim(0, 1.20)
     plt.tight_layout()
     save_fig(fig, 'fig_05_fevd_ipc')
 else:

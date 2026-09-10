@@ -1,0 +1,4 @@
+Model,Obs,Coef./eq.,Portm. p,Emo→CPI p (boot),CPI→Emo p (boot),Pairs p<.05,Pairs q<.05
+VAR(2),81,11,0.0092,0.056,0.0075,5,2
+VAR(4),79,21,0.0792,0.033,0.218,4,0
+VAR(6),77,31,0.0327,0.1165,0.3065,3,0
