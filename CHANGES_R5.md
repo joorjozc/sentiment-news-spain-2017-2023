@@ -38,3 +38,12 @@ Figure 5 and one sentence did.
 This repository replaces https://github.com/Jorgejosezamora/sentiment-news-spain-2017-2023, whose
 account is no longer accessible. The earlier repository remains online in its March 2026 state but
 cannot be updated; this one carries its full commit history plus all later corrections.
+
+## Cointegration and Toda-Yamamoto (scripts/13_r5_cointegration_toda_yamamoto.py)
+- The Johansen trace statistic reported earlier (10.96) used five lagged differences, the lag
+  length of the former VAR(6). `results/r5/johansen_sensitivity.csv` reports the statistic for
+  one to eight lagged differences: it rejects no cointegration with one to three (three being the
+  lag length of the primary VAR(4)) and does not with four or more.
+- Toda-Yamamoto Granger tests (VAR in levels with p + 1 lags, Wald on the first p lags), valid
+  regardless of integration or cointegration, for the five-variable and the negativity systems
+  (`results/r5/r5_cointegration_summary.json`).
