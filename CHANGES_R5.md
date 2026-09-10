@@ -19,3 +19,14 @@ Figure 5 and one sentence did.
   of persistent sources (fixed weights). The break tests and the pre/post-COVID contrasts are
   repeated on the fixed-panel emotion series. The script needs headline-level data, which are
   not distributed; its outputs, including the monthly fixed-panel series, are in `results/r5/`.
+- `scripts/11_r5_negativity_index.py` - complementary test of the negativity hypothesis: the
+  composite negativity index (anger + fear + sadness, as in Fig. 6) in a three-variable VAR
+  [CPI, negativity, joy], with Granger tests in both directions (bootstrap, Holm), a lag sweep
+  from 1 to 8, the cumulative response of negativity to a CPI shock, and the same tests on the
+  fixed panel of sources. It runs from the published monthly data in `data/` and `results/r5/`.
+- `scripts/r5_common.py` - functions shared by scripts 09 and 11 (bootstrap Granger test, generalized FEVD).
+
+## Repository location
+This repository replaces https://github.com/Jorgejosezamora/sentiment-news-spain-2017-2023, whose
+account is no longer accessible. The earlier repository remains online in its March 2026 state but
+cannot be updated; this one carries its full commit history plus all later corrections.
